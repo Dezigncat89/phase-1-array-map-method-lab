@@ -14,3 +14,12 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 }
+
+function titleCased() {
+  let newTitled = [];
+  for(let x = 0; x < tutorials.length ; x++){
+    newTitled[x] = tutorials[x].charAt(0).toUpperCase() + tutorials[x].slice(1);
+}
+return newTitled.join(' ');
+}
+console.log(newTitled);
