@@ -15,6 +15,7 @@ const titleCased = () => {
   return tutorials
 }
 
+//Used For Loop to Evaluate Array and Make Changes
 function titleCased() {
   let newTitled = [];
   for(let x = 0; x < tutorials.length ; x++){
