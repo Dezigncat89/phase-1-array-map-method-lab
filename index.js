@@ -15,12 +15,11 @@ const titleCased = () => {
   return tutorials
 }
 
-//Used For Loop to Evaluate Array and Make Changes
-function titleCased() {
-  let newTitled = [];
-  for(let x = 0; x < tutorials.length ; x++){
+//Use Map Function to Capitalize Letters
+function titleCased(newTitled) {
     newTitled[x] = tutorials[x].charAt(0).toUpperCase() + tutorials[x].slice(1);
+    return newTitled.join(' ');
   }
-return newTitled.join(' ');
-}
-console.log(newTitled);
+    let result = tutorials.map(titleCased);
+
+console.log(result);
